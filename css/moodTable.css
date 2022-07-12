@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #702963;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  margin: 0;
+}
+
+main {
+  background: #fff;
+  margin-top: 3em;
+  padding: 1em;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(12, 16, 31, 0.4);
+  margin: 1em;
+  width: 130ch;
+  /* display: flex; */
+}
+
+table {
+  position: relative;
+  /* display: grid;
+  grid-template-columns: repeat(4, 1fr); */
+  margin: 0 auto;
+  padding: 2em;
+  /* grid-template-areas:
+    "jade th th th"
+    "td td td td"
+    "tfoot tfoot tfoot tfoot"; */
+  /* display: table-header-group; */
+  /* justify-items: center; */
+}
+
+table th {
+  margin: 1em;
+  text-align: center;
+  padding: 1em;
+  padding-top: 2em;
+  float: left;
+  width: 20ch;
+  justify-content: space-between;
+}
+
+table tbody tr:hover {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0, 2);
+}
+
+table td {
+  margin: 1em;
+  position: relative;
+  padding: 1em;
+  padding-left: 2em;
+  vertical-align: top;
+  width: 25ch;
+  float: left;
+}
+
+.green {
+  color: #00a86b;
+}
+
+.blue {
+  color: #6699cc;
+}
+
+.yellow {
+  color: #f9a602;
+}
+
+.red {
+  color: #800000;
+}
+
+#store {
+  background-color: #7e481c;
+  border: 0.2em solid #7e481c;
+  border-radius: 0.25em;
+  color: #ceb180;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: space-around; */
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 0.9rem;
+  padding: 0.7em;
+  margin: 1.7em 0em;
+  width: 10ch;
+}
+
+/* tfoot {
+  display: block;
+} */
