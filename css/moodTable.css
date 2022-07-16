@@ -1,4 +1,10 @@
-* {
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
   box-sizing: border-box;
 }
 
@@ -24,9 +30,13 @@ main {
 }
 
 table {
+  border-style: groove;
   position: relative;
-  /* display: grid;
-  grid-template-columns: repeat(4, 1fr); */
+  /* display: flex; */
+  /* justify-content: center; */
+  display: grid;
+  gap: 1em;
+  grid-template-columns: repeat(4, 1fr);
   margin: 0 auto;
   padding: 2em;
   /* grid-template-areas:
@@ -36,15 +46,27 @@ table {
   /* display: table-header-group; */
   /* justify-items: center; */
 }
+table tbody {
+  grid-column: span 4 / auto;
+  border-style: groove;
+  display: flex;
+}
 
+thead {
+  border-style: groove;
+  grid-column: span 4 / auto;
+  display: flex;
+  justify-content: space-evenly;
+}
 table th {
+  width: 22ch;
+  position: relative;
+  border-style: double;
   margin: 1em;
   text-align: center;
   padding: 1em;
-  padding-top: 2em;
+  /* padding-top: 2em; */
   float: left;
-  width: 20ch;
-  justify-content: space-between;
 }
 
 table tbody tr:hover {
@@ -52,6 +74,8 @@ table tbody tr:hover {
 }
 
 table td {
+  border-color: #7e481c;
+  border-style: groove;
   margin: 1em;
   position: relative;
   padding: 1em;
@@ -93,6 +117,7 @@ table td {
   width: 10ch;
 }
 
-/* tfoot {
-  display: block;
-} */
+tfoot {
+  grid-column: span 4 / auto;
+  border-style: groove;
+}
