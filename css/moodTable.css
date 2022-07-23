@@ -30,7 +30,8 @@ main {
 }
 
 table {
-  border-style: groove;
+  border-collapse: collapse;
+  outline: 1rem;
   position: relative;
   /* display: flex; */
   /* justify-content: center; */
