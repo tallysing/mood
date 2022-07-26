@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/moodChart.css" />
+
+    <script src="./script/moodChart.js" type="module" defer></script>
+    <title>Humör översikt</title>
+  </head>
+  <body>
+    <h1>Dina humörsvängningar över tid</h1>
+
+    <main>
+      <div class="chartBox">
+        <canvas id="doughnut"></canvas>
+      </div>
+      <button id="revert" class="hide">Tillbaka</button>
+      <div id="logBox"><button id="Logga">Logga</button></div>
+    </main>
+  </body>
+</html>
