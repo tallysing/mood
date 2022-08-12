@@ -21,7 +21,14 @@ import "./node_modules/chart.js-plugin-labels-dv/dist/chartjs-plugin-labels.min.
   const cookie = parseCookie(allCookies),
     account = JSON.parse(cookie.user),
     { redZone, blueZone, yellowZone, greenZone } = account,
-    revertBtn = document.getElementById("revert");
+    revertBtn = document.getElementById("revert"),
+    logBtn = document.getElementById("Logga");
+
+  logBtn.addEventListener("click", function log(evt) {
+    evt.preventDefault();
+
+    window.location = "moodTable.html";
+  });
 
   const bluePair = Object.entries(blueZone).filter(
       ([key, value]) => value !== 0

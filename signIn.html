@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inloggning/Registering</title>
+    <link rel="stylesheet" href="css/signIn.css" />
+    <script src="script/signIn.js" type="module"></script>
+    <!-- folder -->
+  </head>
+  <body>
+    <main id="main">
+      <div class="form sign-up">
+        <form method="POST">
+          <h2>Registera ditt konto här</h2>
+          <input
+            type="text"
+            id="register-name"
+            placeholder="Namn och efternamn"
+          />
+          <input type="email" id="register-email" placeholder="Epost" />
+          <input
+            type="password"
+            id="register-password"
+            placeholder="Lösenord"
+          />
+          <input
+            type="password"
+            id="verify-password"
+            placeholder="Bekräfta lösenord"
+          />
+          <button id="sign_up">Skapa</button>
+        </form>
+      </div>
+      <div class="form sign-in">
+        <form action="#">
+          <h2>Inloggning</h2>
+          <input type="email" id="sign-in-email" placeholder="Epost" />
+          <input type="password" id="sign-in-password" placeholder="Lösenord" />
+          <a href="#">Glömt lösenordet?</a>
+          <button id="sign-in-btn">Logga in</button>
+        </form>
+      </div>
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-left panel">
+            <h1>Välkommen tillbaka!</h1>
+            <button class="ghost" id="signIn">Logga in</button>
+          </div>
+          <div class="overlay-right panel">
+            <h1>
+              Hej! Jag heter ... och här kommer folk som vill få översikt över
+              sitt mående.
+            </h1>
+            <p>
+              Fyll i dina personliga uppgifter hos mig här, så kan vi börja vår
+              resa
+            </p>
+            <button class="ghost" id="signUp">Skapa</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <a href="#">Kontakt</a>
+      <a href="#">Villkor</a>
+      <a href="#">Vanliga frågor</a>
+    </footer>
+  </body>
+</html>
